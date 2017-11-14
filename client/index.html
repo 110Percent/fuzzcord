@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fuzzcord</title>
+</head>
+
+<body scroll="no">
+
+    <div class="overlay">
+        <div class="overlay-contents">
+            <div class="preloader-wrapper big active overlay-preloader">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="flow-text">Loading...</span>
+        </div>
+    </div>
+
+
+
+    <header>
+        <ul id="dropdown1" class="dropdown-content" style="margin-top: 65px;">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+        <nav>
+            <div class="nav-wrapper blue">
+                <a href="#!" class="brand-logo" style="margin-left: 15px;">Fuzzcord</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a>Welcome back,</a></li>
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <ul class="side-nav fixed guild-nav">
+            <li><span>Guild Scroller</span></li>
+        </ul>
+
+        <ul class="side-nav fixed channel-nav">
+        </ul>
+
+        <div class="chat-desktop">
+            <div class="chat-topbar">
+                <span class="channel-name"></span>
+            </div>
+            <div class="message-scroller-container" id="message-scroller-container">
+                <div class="message-scroller" id="message-scroller">
+
+                </div>
+            </div>
+
+            <div id="messages-input">
+                <input type="text" id="input" />
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <!--Import jQuery before materialize.js-->
+    <!-- script type="text/javascript" src="js/jquery-3.2.1.min.js"></script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.3.1"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script>
+        if (window.module) module = window.module;
+    </script>
+
+</body>
+
+</html>

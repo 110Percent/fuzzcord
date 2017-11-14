@@ -1,0 +1,165 @@
+@font-face {
+    font-family: emoji;
+    src: url('../fonts/TwitterColorEmoji-SVGinOT.ttf');
+}
+
+span,
+p,
+input {
+    color: #F5F5F5;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #2C2F33;
+}
+
+main {
+    display: flex;
+    height: 800px;
+}
+
+.chat-desktop {
+    height: 100%;
+    width: 1100px;
+}
+
+.chat-topbar {
+    margin-top: 5px;
+    height: 50px;
+    width: 100%;
+    background-color: #2C2F33;
+    padding: 15px;
+    position: relative;
+    border-bottom: 1px rgb(85, 91, 99) solid;
+    display: none;
+}
+
+.channel-name {
+    font-size: 1.2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    background-color: #2C2F33;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.overlay-contents {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    padding-top: 10%;
+    margin: -15% 0 0 -25%;
+    text-align: center;
+}
+
+.overlay-preloader {
+    display: inline-block;
+    top: 50%;
+    height: 30%;
+}
+
+.nav-wrapper {
+    z-index: 99;
+    position: fixed;
+}
+
+.side-nav {
+    width: 250px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.side-nav li {
+    padding: 10px;
+    display: block;
+    text-overflow: ellipsis;
+    font-size: 1.3rem;
+}
+
+.side-nav::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.side-nav::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.side-nav::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+.message-scroller-container {
+    box-sizing: border-box;
+    height: 700px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.message-scroller {
+    padding-bottom: 40px;
+}
+
+.message {
+    margin: 15px;
+    font-size: 1.15rem;
+    display: flex;
+    word-wrap: break-word;
+}
+
+.msg-avatar {
+    margin-right: 20px;
+}
+
+.msg-avatar-img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.msg-content p {
+    margin: 0px;
+    -webkit-margin: 0px;
+}
+
+.emoji {
+    height: 1.55rem;
+}
+
+.emoji-large {
+    height: 2.1rem;
+}
+
+.image-embed {
+    max-width: 600px;
+    max-height: 300px;
+}
+
+.messages-input {
+    width: 100%;
+    height: 196px;
+}
+
+#input {
+    width: 90%;
+    margin-left: 5%;
+}

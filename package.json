@@ -1,0 +1,13 @@
+{
+    "dependencies": {
+        "circular-json-es6": "^2.0.1",
+        "discord.js": "^11.2.1",
+        "electron-prebuilt": "^1.4.13",
+        "is-url": "^1.2.2",
+        "jquery": "^3.2.1",
+        "json-stringify": "^1.0.0",
+        "open": "^0.0.5",
+        "showdown": "^1.8.2"
+    },
+    "main": "app.js"
+}
